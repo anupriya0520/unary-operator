@@ -1,1 +1,12 @@
-
+class unary{
+     public static void main(String[] args){
+           int a=10;
+           ++a;//11
+           int b=a--; //b=11->a=10
+           System.out.println(b--);//11 ->b=10
+           int c=--b+a++;//9+10=19->a=11->9
+           int d= ++a - ++b+ ++c - --c;//12-10+20-19=3->a=12 ->b=10->c=19
+           System.out.println(c);//19
+           System.out.println(d);//3
+      }
+}
